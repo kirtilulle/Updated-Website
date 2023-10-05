@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Plant Paradise</a>
+        </div>
+        <!-- Add a button for the toggle menu on smaller screens -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Plants for Swap</a></li>
+            <li class="dropdown">
+                <a href="#">Plant Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Donate a Plant</a></li>
+                    <li><a href="#">Adopt a Plant</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <!-- Add the search bar -->
+            <li>
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" name="search" placeholder="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="overlay">
+            <h1>Welcome to Our Plant Lovers Community</h1>
+            <p>Discover, share, and grow your plant collection with fellow enthusiasts. <br>Explore a world of plant Swapping, donating, and adopting. Find your <br>perfect plant match today.</p>
+            <a href="#" class="join-button">Join Now</a>
+        </div>
+    </header>
+    <div class="page-gap"></div>
+
+    <div class="overlay">
+        <!-- <h1>Page 2</h1> -->
+        <div class="content">
+            <div class="text">
+                <h2>Plant Swapping</h2>
+                <p>Join our vibrant plant swapping community, where plant lovers unite to share the beauty of green living. Swap your beloved plants with fellow enthusiasts and explore a world of botanical diversity. It's not just about exchanging plants; it's about cultivating connections and nurturing a thriving ecosystem of plant enthusiasts. Whether you're a seasoned gardener or a budding green thumb, our platform welcomes all. Discover new plant companions, expand your collection, and let your passion for plants flourish with us.</p>
+            </div>
+            <div class="image">
+                <img src="second.jpg" alt="Image 2">
+            </div>
+        </div>
+    </div>
+    <div class="page-gap"></div>
+
+    <div class="overlay">
+        <!-- <h1>Page 3</h1> -->
+        <div class="content">
+            <div class="image">
+                <img src="third.jpg" alt="Image 2">
+            </div>
+            <div class="text">
+                <h2>Plant Donating </h2>
+                <p>Embrace the spirit of generosity by donating your plants to those who appreciate their beauty and benefits. At our plant donation hub, we celebrate the act of giving life to someone else's home or garden. Your donated plants can brighten someone's day, purify their air, or provide a sense of serenity. It's a heartfelt gesture that creates a positive ripple effect, fostering a sense of community and environmental responsibility. Join us in spreading green joy through plant donations and watch the love for plants grow.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="page-gap"></div>
+
+    <div class="overlay">
+        <!-- <h1>Page 4</h1> -->
+        <div class="content">
+            <div class="text">
+                <h2>Plant Adopting</h2>
+                <p>Welcome a new leafy companion into your life through plant adoption. Our adoption platform connects plant seekers with green treasures in need of a loving home. Adopting a plant is more than just acquiring greenery; it's a promise to nurture, protect, and cherish a living being. Each adopted plant carries a unique story, and you become a part of its journey. Whether you're an experienced plant parent or a novice, adopting a plant is a rewarding experience that enriches your space and your heart. Open your home to a new plant friend today and create a lasting bond.</p>
+            </div>
+            <div class="image">
+                <img src="fourth.jpg" alt="Image 2">
+            </div>
+        </div>
+    </div>
+    <div class="page-gap"></div>
+
+    <div class="login-container">
+        <form class="login-form" action="#" method="POST">
+            <h2>Login to Your Account</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <div class="form-footer">
+                <a href="#">Forgot Password?</a>
+                <span>Don't have an account? <a href="#">Sign Up</a></span>
+            </div>
+        </form>
+    </div>
+    <div class="page-gap"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="fb.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="twit.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="insta.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <p>&copy; ALL RIGHTS ARE RESERVED BY 2023 Plant Paradise</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('nav-links');
+            var menuToggle = document.querySelector('.menu-toggle');
+            navLinks.classList.toggle('show');
+            menuToggle.classList.toggle('show');
+        }
+        </script>
+        
+</body>
+</html>
